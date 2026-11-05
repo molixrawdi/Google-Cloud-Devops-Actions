@@ -1,4 +1,4 @@
-# This is a general GCP topic repository that will cover some technical journey components for reference.
+# This is a general GCP topics repository that will cover some technical journey components for reference.
 
 
 ## Resource analysing whilst under GCP:
