@@ -55,3 +55,14 @@ Private Google Access vs. Private Service Connect</p>
 It is common to compare Private Google Access with Private Service Connect (PSC):</p>
 Private Google Access (PGA): Enabled on a subnet to allow VMs to access set ranges of default Google API endpoints. Traffic still targets public domain names (*.googleapis.com).</p>
 Private Service Connect (PSC): Allows you to create explicit internal endpoints (using internal IP addresses from your own VPC subnet) to access Google APIs, third-party managed services, or services in another VPC.</p>
+
+## Logs and how to work with them</p>
+
+Below is a simple query to run on the "Logs Explorer" , that latter can be used as an unput in the search bar to take one to the target dashboard</P>
+
+As usual replace vm name with own vm name.</p>
+```
+resource.type="gce_instance"
+"VM_NAME"
+logName:("logs/cloudaudit.googleapis.com%2Fsystem_event" OR "logs/cloudaudit.googleapis.com%2Factivity")
+```
